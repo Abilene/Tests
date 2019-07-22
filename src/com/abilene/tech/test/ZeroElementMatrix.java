@@ -13,7 +13,7 @@ import com.abilene.tech.test.validation.InputValidation;
  */
 public class ZeroElementMatrix {
 
-	static void convertToZero(int row, int column, int[][] matrix) {
+	private static void convertToZero(int row, int column, int[][] matrix) {
 		// We may need a new matrix if we find a zero in matrix
 		int[][] zeroedMatrix = new int[row][column];
 		fillAll(matrix, zeroedMatrix, row, column);
@@ -33,19 +33,19 @@ public class ZeroElementMatrix {
 		Print2DMatrix.print(row, column, zeroedMatrix);
 	}
 	
-	static void fillRows(int[][] matrix,int i, int c) {
+	private static void fillRows(int[][] matrix,int i, int c) {
 		for(int k=0; k<c; k++) {
 			matrix[i][k] = 0;
 		}
 	}
 	
-	static void fillColumns(int[][] matrix,int j, int r) {
+	private static void fillColumns(int[][] matrix,int j, int r) {
 		for(int k=0; k<r; k++) {
 			matrix[k][j] = 0;
 		}
 	}
 	
-	static void fillAll(int[][] original, int[][] copy, int r, int c) {
+	private static void fillAll(int[][] original, int[][] copy, int r, int c) {
 		for(int i=0; i<r;i++) {
 			for(int j=0; j<c;j++) {
 				copy[i][j] = original[i][j];

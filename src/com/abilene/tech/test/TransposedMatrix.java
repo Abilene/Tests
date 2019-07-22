@@ -11,7 +11,7 @@ import com.abilene.tech.test.validation.InputValidation;
  */
 public class TransposedMatrix {
 	
-	static void transpose(int row, int column, int[][] matrix){
+	private static void transpose(int row, int column, int[][] matrix){
 		// Print the first matrix
 		System.out.println("Your matrix is:");
 		Print2DMatrix.print(row, column, matrix);

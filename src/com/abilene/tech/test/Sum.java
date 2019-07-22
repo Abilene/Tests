@@ -6,7 +6,7 @@ import com.abilene.tech.test.validation.InputValidation;
 
 public class Sum {
 	
-	static void compute(double k) {
+	private static void compute(double k) {
 		double sum = 0, count =0;
 		
 		for(int i=1; i<=k; i++) {
@@ -32,8 +32,7 @@ public class Sum {
 			}
 			
 		}while(!isLessThan);
-		
-		
+		scan.close();
 		
 		System.out.println("Start computing for k=" + k);
 		compute(k);
