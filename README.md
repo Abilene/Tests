@@ -23,3 +23,7 @@ Calculate a sum
 
 Given a sorted array of strings which is interspersed with empty strings, write a function to find the location
 of a given string. I used a fixed array of Strings, I did not have much time to continue.
+
+### String permutations
+
+Get all permutations of a string.
